@@ -1,9 +1,8 @@
 var urlShorter = require('node-url-shorter');
 var tinyURL = require('tinyurl');
-var gglurl = require('node-gglurl');
 
-var re = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; ///^(http|https):\/\/[^ "]+$/
 var shorten = function(url){
+  var re = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; ///^(http|https):\/\/[^ "]+$/
   var valid = re.test(url);
   if(valid){
     tinyURL.shorten(url, function(s_url) {

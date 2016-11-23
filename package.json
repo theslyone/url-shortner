@@ -23,9 +23,6 @@
   "homepage": "https://github.com/theslyone/timestamp-microservice#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "node-gglurl": "0.0.4",
-    "node-url-shorter": "0.0.4",
-    "perma": "^2.0.1",
     "pug": "^2.0.0-beta6",
     "tinyurl": "^1.1.2"
   }
