@@ -1,0 +1,21 @@
+body{
+  background-color: #fff !important;
+  margin-top: 50px;
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.user-story{
+  border-left: 2px solid gray;
+  padding-left: 20px;
+}
+
+footer{
+  position: fixed;
+  margin-bottom: 0px;
+}

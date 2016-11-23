@@ -1,0 +1,33 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "URL shortner implementation for freecodecamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theslyone/timestamp-microservice.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Okonkwo Sylvester <theslyguy@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theslyone/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/theslyone/timestamp-microservice#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "node-gglurl": "0.0.4",
+    "node-url-shorter": "0.0.4",
+    "perma": "^2.0.1",
+    "pug": "^2.0.0-beta6",
+    "simple-short": "^1.0.7",
+    "tinyurl": "^1.1.2"
+  }
+}
