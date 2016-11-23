@@ -27,7 +27,6 @@
     "node-url-shorter": "0.0.4",
     "perma": "^2.0.1",
     "pug": "^2.0.0-beta6",
-    "simple-short": "^1.0.7",
     "tinyurl": "^1.1.2"
   }
 }
