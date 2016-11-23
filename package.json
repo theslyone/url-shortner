@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theslyone/timestamp-microservice.git"
+    "url": "git+https://github.com/theslyone/url-shortner.git"
   },
   "keywords": [
     "nodejs",

@@ -18,20 +18,20 @@ app.get("/new/:url(*)", function(req,res){
     var re = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; ///^(http|https):\/\/[^ "]+$/
     var valid = re.test(url);
     if(valid){
-      /*urlShorter.getShortUrl(url)
-      .then(function(data){
-          responseObj = {original_url: url, short_url: data };
+      urlShorter.getShortUrl(url)
+      .then(function(s_url){
+          responseObj = {original_url: url, short_url: s_url };
           res.end(JSON.stringify(responseObj, null, " "));
       })
       .fail(function(err){
         responseObj = {error:err };
         res.end(JSON.stringify(responseObj, null, " "));
       });
-      shorten(url, function(s_url) {
+      /*shorten(url, function(s_url) {
         console.log(s_url);
         responseObj = {original_url: url, short_url: s_url };
         res.end(JSON.stringify(responseObj, null, " "));
-      });*/
+      });
       gglurl.encode(function(err, s_url) {
         if (err) {
             console.log(err);
@@ -42,7 +42,7 @@ app.get("/new/:url(*)", function(req,res){
             responseObj = {original_url: url, short_url: s_url };
             res.end(JSON.stringify(responseObj, null, " "));
         }
-      }, url);
+      }, url);*/
     }
     else{
       responseObj = {error: "Invalid url" };
