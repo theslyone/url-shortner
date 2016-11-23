@@ -42,4 +42,4 @@ var shorten = function(url){
   }
 }
 
-modules.export = shorten;
+module.export = shorten;
