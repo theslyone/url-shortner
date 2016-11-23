@@ -18,7 +18,12 @@ app.get("/new/:url(*)", function(req,res){
     var re = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/; ///^(http|https):\/\/[^ "]+$/
     var valid = re.test(url);
     if(valid){
-      urlShorter.getShortUrl(url)
+      tinyURL.shorten(url, function(s_url) {
+        console.log(s_url);
+        responseObj = {original_url: url, short_url: s_url };
+        res.end(JSON.stringify(responseObj, null, " "));
+      });
+      /*urlShorter.getShortUrl(url)
       .then(function(s_url){
           responseObj = {original_url: url, short_url: s_url };
           res.end(JSON.stringify(responseObj, null, " "));
@@ -27,7 +32,7 @@ app.get("/new/:url(*)", function(req,res){
         responseObj = {error:err };
         res.end(JSON.stringify(responseObj, null, " "));
       });
-      /*shorten(url, function(s_url) {
+      shorten(url, function(s_url) {
         console.log(s_url);
         responseObj = {original_url: url, short_url: s_url };
         res.end(JSON.stringify(responseObj, null, " "));
